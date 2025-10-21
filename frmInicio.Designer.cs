@@ -33,7 +33,7 @@
             txtDescripcion = new TextBox();
             mtbPrecio = new MaskedTextBox();
             lstOrigen = new ComboBox();
-            mtbOrigen = new MaskedTextBox();
+            mtbNumero = new MaskedTextBox();
             lstMarca = new ComboBox();
             cmdCancelar = new Button();
             cmdRegistrar = new Button();
@@ -73,7 +73,7 @@
             tbRegistrar.Controls.Add(txtDescripcion);
             tbRegistrar.Controls.Add(mtbPrecio);
             tbRegistrar.Controls.Add(lstOrigen);
-            tbRegistrar.Controls.Add(mtbOrigen);
+            tbRegistrar.Controls.Add(mtbNumero);
             tbRegistrar.Controls.Add(lstMarca);
             tbRegistrar.Controls.Add(cmdCancelar);
             tbRegistrar.Controls.Add(cmdRegistrar);
@@ -117,13 +117,13 @@
             lstOrigen.Size = new Size(151, 31);
             lstOrigen.TabIndex = 4;
             // 
-            // mtbOrigen
+            // mtbNumero
             // 
-            mtbOrigen.Location = new Point(184, 184);
-            mtbOrigen.Mask = "999999";
-            mtbOrigen.Name = "mtbOrigen";
-            mtbOrigen.Size = new Size(151, 30);
-            mtbOrigen.TabIndex = 1;
+            mtbNumero.Location = new Point(184, 184);
+            mtbNumero.Mask = "999999";
+            mtbNumero.Name = "mtbNumero";
+            mtbNumero.Size = new Size(151, 30);
+            mtbNumero.TabIndex = 1;
             // 
             // lstMarca
             // 
@@ -310,7 +310,6 @@
             Controls.Add(tbc1);
             Name = "frmInicio";
             Text = "Inicio";
-            Load += this.frmInicio_Load;
             tbc1.ResumeLayout(false);
             tbRegistrar.ResumeLayout(false);
             tbRegistrar.PerformLayout();
@@ -332,7 +331,7 @@
         private Label lblDescripcion;
         private Label lblPrecio;
         private ComboBox lstOrigen;
-        private MaskedTextBox mtbOrigen;
+        private MaskedTextBox mtbNumero;
         private ComboBox lstMarca;
         private Button cmdCancelar;
         private TextBox txtDescripcion;
