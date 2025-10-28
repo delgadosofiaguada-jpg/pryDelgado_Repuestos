@@ -66,7 +66,7 @@
             tbc1.Margin = new Padding(3, 2, 3, 2);
             tbc1.Name = "tbc1";
             tbc1.SelectedIndex = 0;
-            tbc1.Size = new Size(574, 372);
+            tbc1.Size = new Size(551, 311);
             tbc1.TabIndex = 0;
             // 
             // tbRegistrar
@@ -88,14 +88,14 @@
             tbRegistrar.Margin = new Padding(3, 2, 3, 2);
             tbRegistrar.Name = "tbRegistrar";
             tbRegistrar.Padding = new Padding(3, 2, 3, 2);
-            tbRegistrar.Size = new Size(566, 340);
+            tbRegistrar.Size = new Size(543, 279);
             tbRegistrar.TabIndex = 0;
             tbRegistrar.Text = "Registrar";
             tbRegistrar.UseVisualStyleBackColor = true;
             // 
             // txtDescripcion
             // 
-            txtDescripcion.Location = new Point(418, 97);
+            txtDescripcion.Location = new Point(402, 94);
             txtDescripcion.Margin = new Padding(3, 2, 3, 2);
             txtDescripcion.MaxLength = 50;
             txtDescripcion.Name = "txtDescripcion";
@@ -104,7 +104,7 @@
             // 
             // mtbPrecio
             // 
-            mtbPrecio.Location = new Point(389, 48);
+            mtbPrecio.Location = new Point(402, 47);
             mtbPrecio.Margin = new Padding(3, 2, 3, 2);
             mtbPrecio.Mask = "99999";
             mtbPrecio.Name = "mtbPrecio";
@@ -116,7 +116,7 @@
             lstOrigen.DropDownStyle = ComboBoxStyle.DropDownList;
             lstOrigen.FormattingEnabled = true;
             lstOrigen.Items.AddRange(new object[] { "Nacional", "Importado" });
-            lstOrigen.Location = new Point(101, 93);
+            lstOrigen.Location = new Point(152, 93);
             lstOrigen.Margin = new Padding(3, 2, 3, 2);
             lstOrigen.Name = "lstOrigen";
             lstOrigen.Size = new Size(133, 27);
@@ -124,7 +124,7 @@
             // 
             // mtbNumero
             // 
-            mtbNumero.Location = new Point(161, 138);
+            mtbNumero.Location = new Point(152, 136);
             mtbNumero.Margin = new Padding(3, 2, 3, 2);
             mtbNumero.Mask = "999999";
             mtbNumero.Name = "mtbNumero";
@@ -136,15 +136,16 @@
             lstMarca.DropDownStyle = ComboBoxStyle.DropDownList;
             lstMarca.FormattingEnabled = true;
             lstMarca.Items.AddRange(new object[] { "Peugeot (P)", "Fiat (F)", "Renault (R)" });
-            lstMarca.Location = new Point(101, 48);
+            lstMarca.Location = new Point(152, 49);
             lstMarca.Margin = new Padding(3, 2, 3, 2);
             lstMarca.Name = "lstMarca";
             lstMarca.Size = new Size(133, 27);
             lstMarca.TabIndex = 0;
+            lstMarca.SelectedIndexChanged += lstMarca_SelectedIndexChanged;
             // 
             // cmdCancelar
             // 
-            cmdCancelar.Location = new Point(150, 205);
+            cmdCancelar.Location = new Point(137, 206);
             cmdCancelar.Margin = new Padding(3, 2, 3, 2);
             cmdCancelar.Name = "cmdCancelar";
             cmdCancelar.Size = new Size(82, 26);
@@ -154,7 +155,7 @@
             // 
             // cmdRegistrar
             // 
-            cmdRegistrar.Location = new Point(24, 205);
+            cmdRegistrar.Location = new Point(28, 206);
             cmdRegistrar.Margin = new Padding(3, 2, 3, 2);
             cmdRegistrar.Name = "cmdRegistrar";
             cmdRegistrar.Size = new Size(82, 26);
@@ -184,7 +185,7 @@
             // lblMarca
             // 
             lblMarca.AutoSize = true;
-            lblMarca.Location = new Point(28, 54);
+            lblMarca.Location = new Point(19, 52);
             lblMarca.Name = "lblMarca";
             lblMarca.Size = new Size(47, 19);
             lblMarca.TabIndex = 3;
@@ -193,7 +194,7 @@
             // lblOrigen
             // 
             lblOrigen.AutoSize = true;
-            lblOrigen.Location = new Point(28, 99);
+            lblOrigen.Location = new Point(19, 97);
             lblOrigen.Name = "lblOrigen";
             lblOrigen.Size = new Size(51, 19);
             lblOrigen.TabIndex = 2;
@@ -202,7 +203,7 @@
             // lblNumero
             // 
             lblNumero.AutoSize = true;
-            lblNumero.Location = new Point(28, 143);
+            lblNumero.Location = new Point(19, 141);
             lblNumero.Name = "lblNumero";
             lblNumero.Size = new Size(108, 19);
             lblNumero.TabIndex = 1;
@@ -211,7 +212,7 @@
             // lblTitulo
             // 
             lblTitulo.AutoSize = true;
-            lblTitulo.Location = new Point(10, 12);
+            lblTitulo.Location = new Point(6, 12);
             lblTitulo.Name = "lblTitulo";
             lblTitulo.Size = new Size(139, 19);
             lblTitulo.TabIndex = 0;
@@ -231,7 +232,7 @@
             tbConsultar.Margin = new Padding(3, 2, 3, 2);
             tbConsultar.Name = "tbConsultar";
             tbConsultar.Padding = new Padding(3, 2, 3, 2);
-            tbConsultar.Size = new Size(566, 340);
+            tbConsultar.Size = new Size(543, 279);
             tbConsultar.TabIndex = 1;
             tbConsultar.Text = "Consultar";
             tbConsultar.UseVisualStyleBackColor = true;
@@ -240,15 +241,16 @@
             // 
             ltbResultados.FormattingEnabled = true;
             ltbResultados.ItemHeight = 19;
-            ltbResultados.Location = new Point(14, 155);
+            ltbResultados.Location = new Point(14, 166);
             ltbResultados.Margin = new Padding(3, 2, 3, 2);
             ltbResultados.Name = "ltbResultados";
-            ltbResultados.Size = new Size(420, 80);
+            ltbResultados.Size = new Size(420, 99);
             ltbResultados.TabIndex = 7;
+            ltbResultados.SelectedIndexChanged += ltbResultados_SelectedIndexChanged;
             // 
             // cmdConsultar
             // 
-            cmdConsultar.Location = new Point(17, 94);
+            cmdConsultar.Location = new Point(352, 124);
             cmdConsultar.Margin = new Padding(3, 2, 3, 2);
             cmdConsultar.Name = "cmdConsultar";
             cmdConsultar.Size = new Size(82, 28);
@@ -260,7 +262,7 @@
             // rbImportado
             // 
             rbImportado.AutoSize = true;
-            rbImportado.Location = new Point(347, 68);
+            rbImportado.Location = new Point(77, 127);
             rbImportado.Margin = new Padding(3, 2, 3, 2);
             rbImportado.Name = "rbImportado";
             rbImportado.Size = new Size(92, 23);
@@ -272,7 +274,7 @@
             // rbNacional
             // 
             rbNacional.AutoSize = true;
-            rbNacional.Location = new Point(347, 43);
+            rbNacional.Location = new Point(77, 102);
             rbNacional.Margin = new Padding(3, 2, 3, 2);
             rbNacional.Name = "rbNacional";
             rbNacional.Size = new Size(79, 23);
@@ -286,7 +288,7 @@
             lstMarca2.DropDownStyle = ComboBoxStyle.DropDownList;
             lstMarca2.FormattingEnabled = true;
             lstMarca2.Items.AddRange(new object[] { "Peugeot (P)", "Fiat (F)", "Renault (R)" });
-            lstMarca2.Location = new Point(85, 37);
+            lstMarca2.Location = new Point(77, 39);
             lstMarca2.Margin = new Padding(3, 2, 3, 2);
             lstMarca2.Name = "lstMarca2";
             lstMarca2.Size = new Size(133, 27);
@@ -295,7 +297,7 @@
             // lblMarca2
             // 
             lblMarca2.AutoSize = true;
-            lblMarca2.Location = new Point(17, 43);
+            lblMarca2.Location = new Point(14, 47);
             lblMarca2.Name = "lblMarca2";
             lblMarca2.Size = new Size(47, 19);
             lblMarca2.TabIndex = 2;
@@ -304,7 +306,7 @@
             // lblOrigen2
             // 
             lblOrigen2.AutoSize = true;
-            lblOrigen2.Location = new Point(271, 43);
+            lblOrigen2.Location = new Point(14, 104);
             lblOrigen2.Name = "lblOrigen2";
             lblOrigen2.Size = new Size(51, 19);
             lblOrigen2.TabIndex = 1;
@@ -323,7 +325,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(589, 400);
+            ClientSize = new Size(565, 338);
             Controls.Add(tbc1);
             Margin = new Padding(3, 2, 3, 2);
             Name = "frmInicio";

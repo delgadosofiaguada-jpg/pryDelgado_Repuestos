@@ -154,6 +154,16 @@ namespace pryDelgado_GestionRepuestos
                 ltbResultados.Items.Add("No se encontraron repuestos con esos criterios.");
             }
         }
+
+        private void lstMarca_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ltbResultados_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 
