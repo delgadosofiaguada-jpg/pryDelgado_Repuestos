@@ -10,7 +10,11 @@ namespace pryDelgado_GestionRepuestos
         string[,] Repuestos = new string[100, 5];
         int C = 0;
 
-        private void cmdAgregarRepuesto_Click(object sender, EventArgs e)
+        private void cmdRegistrar_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void cmdRegistrar_Click_1(object sender, EventArgs e)
         {
             if (C >= 100)
             {
@@ -111,6 +115,7 @@ namespace pryDelgado_GestionRepuestos
             mtbPrecio.Text = "";
 
         }
+
         private void cmdConsultar_Click(object sender, EventArgs e)
         {
             if (C == 0)
@@ -125,17 +130,17 @@ namespace pryDelgado_GestionRepuestos
                 return;
             }
 
-            char marca = lstMarca2.Text[0];
-            char origen = rbNacional.Checked ? 'N' : 'I';
-            bool encontrado = false;
+            char Marca = lstMarca2.Text[0];
+            char Origen = rbNacional.Checked ? 'N' : 'I';
+            bool Encontrado = false;
 
             ltbResultados.Items.Clear();
 
             for (int i = 0; i < C; i++)
             {
-                if (Repuestos[i, 0][0] == marca && Repuestos[i, 1][0] == origen)
+                if (Repuestos[i, 0][0] == Marca && Repuestos[i, 1][0] == Origen)
                 {
-                    encontrado = true;
+                    Encontrado = true;
                     ltbResultados.Items.Add(
                         "Número: " + Repuestos[i, 2] +
                         " | Descripción: " + Repuestos[i, 3] +
@@ -144,13 +149,11 @@ namespace pryDelgado_GestionRepuestos
                 }
             }
 
-            if (!encontrado)
+            if (!Encontrado)
             {
                 ltbResultados.Items.Add("No se encontraron repuestos con esos criterios.");
             }
         }
-
-
     }
 }
 
