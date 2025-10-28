@@ -104,14 +104,19 @@ namespace pryDelgado_GestionRepuestos
 
             MessageBox.Show("Repuesto cargado correctamente.");
 
-            // Limpiar
-            lstMarca.SelectedIndex = -1;
-            mtbNumero.Text = "";
-            txtDescripcion.Text = "";
-            mtbPrecio.Text = "";
+
+            LimpiarControles();
 
         }
 
+        private void LimpiarControles()
+        {
+            lstMarca.SelectedIndex = -1;
+            lstOrigen.SelectedIndex = -1;
+            mtbNumero.Text = "";
+            txtDescripcion.Text = "";
+            mtbPrecio.Text = "";
+        }
         private void cmdConsultar_Click(object sender, EventArgs e)
         {
             if (C == 0)
@@ -149,6 +154,11 @@ namespace pryDelgado_GestionRepuestos
             {
                 ltbResultados.Items.Add("No se encontraron repuestos con esos criterios.");
             }
+        }
+
+        private void cmdCancelar_Click(object sender, EventArgs e)
+        {
+            LimpiarControles();
         }
     }
 }
