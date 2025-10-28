@@ -10,10 +10,6 @@ namespace pryDelgado_GestionRepuestos
         string[,] Repuestos = new string[100, 5];
         int C = 0;
 
-        private void cmdRegistrar_Click(object sender, EventArgs e)
-        {
-
-        }
         private void cmdRegistrar_Click_1(object sender, EventArgs e)
         {
             if (C >= 100)
@@ -153,16 +149,6 @@ namespace pryDelgado_GestionRepuestos
             {
                 ltbResultados.Items.Add("No se encontraron repuestos con esos criterios.");
             }
-        }
-
-        private void lstMarca_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void ltbResultados_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

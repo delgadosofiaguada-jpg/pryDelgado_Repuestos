@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmInicio));
             tbc1 = new TabControl();
             tbRegistrar = new TabPage();
             txtDescripcion = new TextBox();
@@ -141,7 +142,6 @@
             lstMarca.Name = "lstMarca";
             lstMarca.Size = new Size(133, 27);
             lstMarca.TabIndex = 0;
-            lstMarca.SelectedIndexChanged += lstMarca_SelectedIndexChanged;
             // 
             // cmdCancelar
             // 
@@ -246,7 +246,6 @@
             ltbResultados.Name = "ltbResultados";
             ltbResultados.Size = new Size(420, 99);
             ltbResultados.TabIndex = 7;
-            ltbResultados.SelectedIndexChanged += ltbResultados_SelectedIndexChanged;
             // 
             // cmdConsultar
             // 
@@ -327,6 +326,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(565, 338);
             Controls.Add(tbc1);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Margin = new Padding(3, 2, 3, 2);
             Name = "frmInicio";
             Text = "Inicio";
