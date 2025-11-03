@@ -86,7 +86,7 @@
             tbRegistrar.Controls.Add(lblTitulo);
             tbRegistrar.Location = new Point(4, 32);
             tbRegistrar.Name = "tbRegistrar";
-            tbRegistrar.Padding = new Padding(3, 3, 3, 3);
+            tbRegistrar.Padding = new Padding(3);
             tbRegistrar.Size = new Size(622, 379);
             tbRegistrar.TabIndex = 0;
             tbRegistrar.Text = "Registrar";
@@ -222,7 +222,7 @@
             tbConsultar.Controls.Add(lblTitulo2);
             tbConsultar.Location = new Point(4, 32);
             tbConsultar.Name = "tbConsultar";
-            tbConsultar.Padding = new Padding(3, 3, 3, 3);
+            tbConsultar.Padding = new Padding(3);
             tbConsultar.Size = new Size(622, 379);
             tbConsultar.TabIndex = 1;
             tbConsultar.Text = "Consultar";
@@ -314,6 +314,7 @@
             Controls.Add(tbc1);
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "frmInicio";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Inicio";
             tbc1.ResumeLayout(false);
             tbRegistrar.ResumeLayout(false);
